@@ -31,7 +31,7 @@ var all = {
 
   // Secret for session, you will want to change this and make it an environment variable
   secrets: {
-    session: 'site-cur-secret'
+    session: 'site-braz-secret'
   },
 
   // MongoDB connection options
