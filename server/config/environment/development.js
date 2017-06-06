@@ -6,10 +6,10 @@ module.exports = {
 
   // MongoDB connection options
   mongo: {
-  	uri: 'mongodb://localhost/sitecur-dev'
+  	uri: 'mongodb://localhost/sitebraz-dev'
   },
 
   // Seed database on startup
-  seedDB: false
+  seedDB: true
 
 };

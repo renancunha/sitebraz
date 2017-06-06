@@ -13,25 +13,33 @@ import SensorData from '../api/sensor_data/sensor_data.model'
 Sensor.find({}).remove()
   .then(() => {
     Sensor.create({
-      name: 'Temp. Vaso 1',
-      alias: 'TempSolo_vaso_1',
-      unit: 'ºC'
-    }, {
-      name: 'Umidade Solo',
-      alias: 'UmSolo_vaso_1',
-      unit: 'U'
+      name: 'Umidade solo',
+      alias: 'umidade_solo',
+      unit: '%'
     }, {
       name: 'Temp. Ambiente',
-      alias: 'TempAmb_vaso_1',
+      alias: 'temp_ambiente',
       unit: 'ºC'
     }, {
-      name: 'Umidade Ambiente',
-      alias: 'UmiAmb_vaso_1',
-      unit: 'U'
+      name: 'Umid. Ambiente',
+      alias: 'umidade_ambiente',
+      unit: '%'
     }, {
-      name: 'Peso Vaso 1',
-      alias: 'Peso_vaso_1',
-      unit: 'g'
+      name: 'Valvula',
+      alias: 'rele_valvula',
+      unit: ''
+    }, {
+      name: 'Aquecedor',
+      alias: 'rele_aquecedor',
+      unit: ''
+    }, {
+      name: 'Exaustor',
+      alias: 'rele_exaustor',
+      unit: ''
+    }, {
+      name: 'Lâmpada',
+      alias: 'rele_lampada',
+      unit: ''
     }).then(() => {
       Sensor.findOne().exec()
         .then(sensor => {
