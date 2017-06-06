@@ -14,5 +14,5 @@ module.exports = {
     uri:  'mongodb://localhost/sitebraz'
   },
 
-  seedDB: false
+  seedDB: true
 };
