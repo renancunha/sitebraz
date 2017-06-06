@@ -3,7 +3,7 @@
 var path = require('path');
 var _ = require('lodash');
 
-//process.env.NODE_ENV = 'production';
+process.env.NODE_ENV = 'production';
 
 function requiredProcessEnv(name) {
   if (!process.env[name]) {
@@ -21,10 +21,10 @@ var all = {
   root: path.normalize(__dirname + '/../../..'),
 
   // Server port
-  port: 8900,
+  port: 8100,
 
   // Server IP
-  ip: process.env.IP || '0.0.0.0',
+  ip: '150.162.232.45',
 
   // Should we populate the DB with sample data?
   seedDB: false,

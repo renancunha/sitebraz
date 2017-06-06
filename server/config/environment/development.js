@@ -9,6 +9,8 @@ module.exports = {
   	uri: 'mongodb://localhost/sitebraz-dev'
   },
 
+  
+
   // Seed database on startup
   seedDB: true
 
