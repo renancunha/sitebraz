@@ -29,7 +29,7 @@
 </div>-->
 
 <!-- top navigation -->
-<div class="top_nav" ng-show="nav.isLoggedIn()">
+<div class="top_nav">
 
   <div class="nav_menu">
     <nav class="" role="navigation">
@@ -37,7 +37,7 @@
         <a id="menu_toggle"><i class="fa fa-bars"></i></a>
       </div>
 
-      <ul class="nav navbar-nav navbar-right">
+      <ul ng-show="nav.isLoggedIn()" class="nav navbar-nav navbar-right">
         <li class="" uib-dropdown>
           <a href="javascript:;" class="user-profile dropdown-toggle" uib-dropdown-toggle data-toggle="dropdown" aria-expanded="false">
             <img src="/assets/images/users-1-128.png" alt="">{{ nav.getCurrentUser().name }}
